@@ -291,5 +291,3 @@ defaults:
       comments: false
       share: true
       related: false
-
-theme: jekyll-theme-midnight
