@@ -4,7 +4,6 @@ excerpt: "excerpt"
 
 categories:
   - Books
-  - Study
 tags:
   - Java
   - Design Pattern
