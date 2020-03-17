@@ -7,7 +7,7 @@ categories:
 tags:
   - C++
   - Design Pattern
-last_modified_at: 2020-03-17T08:06:00-05:00
+last_modified_at: 2020-03-15T08:06:00-05:00
 ---
 
 4444444444444
