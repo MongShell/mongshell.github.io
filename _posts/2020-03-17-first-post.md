@@ -6,7 +6,7 @@ categories:
   - Blog
 tags:
   - Blog
-last_modified_at: 2020-03-17
+last_modified_at: 2020-03-17T08:06:00-05:00
 ---
 
 제목 : {{ page.title }}
