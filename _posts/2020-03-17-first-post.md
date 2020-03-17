@@ -3,9 +3,11 @@ title:  "First Post"
 excerpt: "excerpt"
 
 categories:
-  - Blog
+  - Books
+  - Study
 tags:
-  - Blog
+  - Java
+  - Design Pattern
 last_modified_at: 2020-03-17T08:06:00-05:00
 ---
 
