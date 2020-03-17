@@ -292,4 +292,4 @@ defaults:
       share: true
       related: false
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-midnight
