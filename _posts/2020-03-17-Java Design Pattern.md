@@ -1,6 +1,9 @@
 ---
 title:  "Java 언어로 배우는 디자인 패턴 입문"
+excerpt: ""
 toc: true
+toc_label: "Table of Contents"
+toc_stick: true
 
 categories:
   - Books

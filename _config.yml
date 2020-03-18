@@ -18,8 +18,8 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "default",
 locale                   : "en-US"
 title                    : "몽쉘의 개발블로그"
 title_separator          : "-"
-subtitle                 : "단순하게 개발하자"
-name                     : "Mong Shell"
+subtitle                 : "If you want to go fast go alone. if you want to go far go together."
+name                     : "Mongshell"
 description              : "기록"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -93,9 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Mong Shell"
+  name             : "Mongshell"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "즐겁게 코딩하는 개발자"
+  bio              : "읽기 쉬운 코드를 지향하는 개발자"
   location         : "South Korea"
   email            : 
   links:
