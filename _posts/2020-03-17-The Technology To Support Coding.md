@@ -1,6 +1,8 @@
 ---
 title:  "코딩을 지탱하는 기술"
 toc: true
+toc_label: "Table of Contents"
+toc_stick: true
 
 categories:
   - Books

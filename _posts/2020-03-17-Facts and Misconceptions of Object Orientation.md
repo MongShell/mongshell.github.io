@@ -1,6 +1,8 @@
 ---
 title:  "객체지향의 사실과 오해"
 toc: true
+toc_label: "Table of Contents"
+toc_stick: true
 
 categories:
   - Books
