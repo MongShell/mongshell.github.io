@@ -4,6 +4,6 @@ permalink: /about/
 layout: single
 ---
 
-## mongshell.github.io 블로그
+## readableprogramming.github.io 블로그
 
 About me
