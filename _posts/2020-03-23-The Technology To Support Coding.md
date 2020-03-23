@@ -12,7 +12,10 @@ tags:
 
 <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=31679090"><img src="https://image.aladin.co.kr/product/3167/90/cover500/8994774483_1.jpg" width="20%"></a>
 ---
+
 ### 리 뷰  
+
+이 책을 본다고 해서 프로그래밍
 
 
 ---
@@ -20,6 +23,7 @@ tags:
 
 ---
 ### 선행 요건
+능숙하게 다룰 수 있는 언어가 최소 두 가지 이상  
 
 ---
 #### 목 차
