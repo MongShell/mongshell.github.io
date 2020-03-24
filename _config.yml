@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "default",
 
 # Site Settings
 locale                   : "en-US"
-title                    : "몽쉘의 개발블로그"
+title                    : "Mongshell's blog"
 title_separator          : "-"
 subtitle                 : "If you want to go fast go alone. if you want to go far go together."
 name                     : "Mongshell"
