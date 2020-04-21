@@ -1,8 +1,5 @@
 ---
 title:  "프로가 되기 위한 웹 기술 입문"
-toc: true
-toc_label: "Table of Contents"
-toc_stick: true
 
 categories:
   - Books

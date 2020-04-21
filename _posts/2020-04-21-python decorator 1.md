@@ -10,6 +10,7 @@ tags:
   - Language
 ---
 
+---
 ### Python Decorator
 
 python 모듈을 개발 시, function name 을 남겨야 할 일이 있었습니다.
@@ -21,7 +22,7 @@ python 모듈을 개발 시, function name 을 남겨야 할 일이 있었습니
 
 여기에서 `test()`와 `foo()`가 실행시마다 각 함수의 이름을 나타내는 것이 목표입니다.
 
-##### basic code
+**basic code**
 ```python
 def foo():
     print('@@@@ foo @@@@')
@@ -38,7 +39,7 @@ if __name__ == '__main__':
     main()
 ```
 
-##### 출력
+**출력**
 ```
 !!!! test !!!!
 @@@@ foo @@@@
@@ -46,7 +47,7 @@ if __name__ == '__main__':
 
 `decorator`를 적용하는 방법은 아래와 같습니다.
 
-##### decorator 를 적용한 code
+**decorator 를 적용한 code**
 ```python
 def logging_function_name(func):
     def echo_func():
@@ -76,7 +77,8 @@ if __name__ == '__main__':
 그리고 적용하고 싶은 함수 위에 `@logging_function_name`만 추가해준다면 `decorator` 적용이 됩니다.
 
 아래와 같이 함수가 실행되기 전에 함수의 이름을 출력하는 것을 확인할 수 있습니다.
-##### 출력
+
+**출력**
 ```
 function name : main
 function name : test
@@ -87,7 +89,7 @@ function name : foo
 
 위에서 보다시피 `decorator`도 하나의 함수입니다. 그러면 `decorator`도 하나의 인자로 받을 수 있지 않을까요? `decorator`에 `decorator`를 적용하면 어떻게 될까요?
 
-##### `decorator`에 decorator를 적용한 code
+**`decorator`에 decorator를 적용한 code**
 ```python
 @logging_function_name
 @logging_function_name
@@ -100,7 +102,7 @@ if __name__ == '__main__':
 
 아래처럼 `decorator` 자체 함수의 이름이 출력되는 것을 확인할 수 있습니다.
 
-##### 출력
+**출력**
 ```
 function name : echo_func
 function name : main
@@ -110,7 +112,7 @@ Process finished with exit code 0
 
 원하는 결과를 얻었으니 우리가 만든 `decorator`가 어떻게 생겼는지 한 번 확인해보겠습니다.
 
-##### logging_function_name
+**logging_function_name**
 ```python
 def logging_function_name(func):
     def echo_func():
@@ -125,7 +127,7 @@ def logging_function_name(func):
 그런데 `decorator`를 검색해보면 `*args, **kwargs` 를 보신 경우가 있을 겁니다.
 이것들은 함수의 인자를 받는 argument 입니다. 각각 `positional argument` 와 `keyword argument` 를 나타내는데 이 내용은 `logging_function_name` 이 아닌 다른 `decorator`를 통해서 알아보도록 하겠습니다.
 
-##### logging_function_name - with argument
+**logging_function_name - with argument**
 ```python
 def logging_function_name(func):
     def echo_func(*args, **kwargs):

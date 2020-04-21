@@ -12,20 +12,21 @@ tags:
 
 ### Python Decorator
 
-전 포스트에서는 `positional argument`와 `keyword argument`가 없는 `decorator`로 함수의 이름을 출력하는 decorator 를 만들었는데 이번에는 argument 를 조작해서 decorator 가 할 수 있는 일을 알아보도록 하겠습니다.
+전 포스트에서는 `positional argument`와 `keyword argument`가 없는 `decorator`로 함수의 이름을 출력하는 `decorator`를 만들었는데 이번에는 argument 를 조작해서 `decorator`가 할 수 있는 일을 알아보도록 하겠습니다.
 
-그 전에 `positional argument` 와 `keyword argument` 에 대해 간단한 설명이 필요할 것 같습니다.
+그 전에 `positional argument`와 `keyword argument`에 대해 간단한 설명이 필요할 것 같습니다.
 
-`positional argument` 는 함수의 위치에 따른 인자를 나타냅니다.
-`add(1,2)` 에서 첫번째 인자가 1, 두번째 인자가 2 라고 할 때 이 것을 나타냅니다.
+`positional argument`는 함수의 위치에 따른 인자를 의미합니다.
+`add(1,2)`에서 첫번째 인자가 1, 두번째 인자가 2 라고 할 때 이 인자들을 나타냅니다.
 
-`keyword argument` 는 keyword 에 어떤 인자가 들어왔느냐를 dictionary 형태로 받습니다.
-`add(i=1, j=2)` 에서 i 에 대입되는 인자가 1, j 에 대입되는 인자가 2 라는 것을 나타냅니다.
+`keyword argument`는 keyword 로 전달된 인자를 의미합니다.
+`add(i=1, j=2)`에서 i 에 대입되는 인자가 1, j 에 대입되는 인자가 2 라는 것을 의미합니다.
 
-아래의 decorator 로 간단히 확인해보겠습니다.
+아래의 `decorator`로 간단히 확인해보겠습니다.
 
-간단한 add 함수와 decorator 를 만들었습니다. 현재 decorator 는 아무 역할을 하지 않습니다.
+간단한 add 함수와 `decorator`를 만들었습니다. 현재 `decorator`는 아무 역할을 하지 않습니다.
 
+**basic decorator**
 ```python
 def decorator(func):
     def echo_func(*args, **kwargs):
@@ -42,18 +43,16 @@ if __name__ == '__main__':
     print(f'result : {add(1, 2)}')
 ```
 
-출력
+**출력**
 ```
 decorator
 add function
 result : 3
 ```
 
+여기서 `args`와  `kwargs`를 출력하면 어떻게 나올까요?
 
-여기서 `args` 와  `kwargs` 를 출력하면 어떻게 나올까요?
-
-decorator 를 아래와 같이 수정해서 args 와 kwargs 에 대해서 파악해보도록 하겠습니다.
-
+`decorator`를 아래와 같이 수정해서 args 와 kwargs 에 대해서 파악해보도록 하겠습니다.
 
 ```python
 def decorator(func):
