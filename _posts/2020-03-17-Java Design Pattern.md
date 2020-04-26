@@ -65,27 +65,26 @@ Java 언어에 대해서도 마찬가지입니다.
 
 ---
 #### 목 차
-
-| Chapter 01 : Iterator | 순서대로 지정해서 처리하기  |
-| Chapter 02 : Adapter | 바꿔서 재이용하기  |
-| Chapter 03 : Template Method | 하위 클래스에서 구체적으로 처리하기  |
-| Chapter 04 : Factory Method | 하위 클래스에서 인스턴스 만들기  |
-| Chapter 05 : Singleton | 인스턴스를 한 개만 만들기  |
-| Chapter 06 : Prototype | 복사해서 인스턴스 만들기  |
-| Chapter 07 : Builder | 복잡한 인스턴스 조립하기  |
-| Chapter 08 : Abstract Factory | 관련 부품을 조합해서 제품 만들기  |
-| Chapter 09 : Bridge | 기능 계층과 구현 계층 분리하기  |
-| Chapter 10 : Strategy | 알고리즘을 모두 바꾸기  |
-| Chapter 11 : Composite | 그릇과 내용물을 동일시하기  |
-| Chapter 12 : Decorator | 장식과 내용물을 동일시하기  |
-| Chapter 13 : Visitor | 데이터 구조를 돌아다니면서 처리하기  |
-| Chapter 14 : Chain of Repository | 책임 떠넘기기  |
-| Chapter 15 : Facade | 단순한 창구  |
-| Chapter 16 : Mediator | 중개인을 통해서 처리하기  |
-| Chapter 17 : Observer | 상태의 변화를 알려주기  |
-| Chapter 18 : Memento | 상태를 저장하기  |
-| Chapter 19 : State | 상태를 클래스로 표현하기  |
-| Chapter 20 : Flyweight | 동일한 것을 공유해서 낭비 없애기  |
-| Chapter 21 : Proxy | 필요해지면 만들기  |
-| Chapter 22 : Command | 명령을 클래스로 하기  |
-| Chapter 23 : Interpreter | 문법규칙을 클래스로 표현하기  |
+ Chapter 01 : Iterator - 순서대로 지정해서 처리하기  
+ Chapter 02 : Adapter - 바꿔서 재이용하기  
+ Chapter 03 : Template Method - 하위 클래스에서 구체적으로 처리하기  
+ Chapter 04 : Factory Method | 하위 클래스에서 인스턴스 만들기  
+ Chapter 05 : Singleton - 인스턴스를 한 개만 만들기  
+ Chapter 06 : Prototype - 복사해서 인스턴스 만들기  
+ Chapter 07 : Builder - 복잡한 인스턴스 조립하기  
+ Chapter 08 : Abstract Factory - 관련 부품을 조합해서 제품 만들기  
+ Chapter 09 : Bridge - 기능 계층과 구현 계층 분리하기  
+ Chapter 10 : Strategy - 알고리즘을 모두 바꾸기  
+ Chapter 11 : Composite - 그릇과 내용물을 동일시하기  
+ Chapter 12 : Decorator - 장식과 내용물을 동일시하기  
+ Chapter 13 : Visitor - 데이터 구조를 돌아다니면서 처리하기  
+ Chapter 14 : Chain of Repository - 책임 떠넘기기  
+ Chapter 15 : Facade - 단순한 창구  
+ Chapter 16 : Mediator - 중개인을 통해서 처리하기  
+ Chapter 17 : Observer - 상태의 변화를 알려주기  
+ Chapter 18 : Memento - 상태를 저장하기  
+ Chapter 19 : State - 상태를 클래스로 표현하기  
+ Chapter 20 : Flyweight - 동일한 것을 공유해서 낭비 없애기  
+ Chapter 21 : Proxy - 필요해지면 만들기  
+ Chapter 22 : Command - 명령을 클래스로 하기  
+ Chapter 23 : Interpreter - 문법규칙을 클래스로 표현하기  
