@@ -1,5 +1,5 @@
 ---
-title:  "Java Lambda"
+title:  "Java Method Reference"
 toc: true
 # toc_label: "Table of Contents"
 toc_stick: true
@@ -11,8 +11,6 @@ tags:
 ---
 
 ### Java Method Reference
-
-메소드 참조
 
 이전 포스트에서 람다를 보면서 메소드 참조라는 것을 언급했습니다. 이번 포스트에서는 메소드 참조에 대해서 살펴보겠습니다.
 
@@ -110,6 +108,7 @@ printDecorator! value : ### 20 ###
 printDecorator! value : ### 30 ###
 ```
 
+---------------------------
 
 첫 번째 방식(Class::instanceMethod)의 동작 테스트 코드입니다. 출력을 보면 `test.sort(Custom::customCompare);`와 `test.sort((e1, e2) -> e1.customCompare(e2));`의 동작이 같습니다.
 ```java
@@ -162,6 +161,7 @@ public interface Comparator<T> {
 
 요약하면, `Custom::customCompare`가 `(e1, e2) -> e1.customCompare(e2)`로 될 때, 첫번째 매개변수가 String 원소가 되고, 두번째 매개변수가 메소드의 매개변수가 되는 것입니다.
 
+-------------------
 
 두번째 방식(Class::staticMethod)입니다.
 동작 테스트 코드입니다. 출력을 보면 `test.forEach(Custom::println);`와 `test.forEach(e -> Custom.println(e));`의 동작이 같습니다.
@@ -207,10 +207,14 @@ public interface Consumer<T> {
 
 그러면, `void accept(T var1);`은 `Custom.println(var1)`이라고도 할 수 있습니다.
 
+---------------------
+
 세 번째 경우(object::instanceMethod)도 두번째 경우와 비슷합니다. (그런데 실제로 많이 보지는 못했습니다.) 두번째와의 유일한 차이는 인스턴스를 선언했기 때문에 instanceMethod를 호출할 수 있다는 것입니다.
 
 
 지금까지는 예제로 메소드 참조를 확인해봤습니다. 그러면 실제로는 어떤지, 이전 포스트에서 나타났던 예제를 통해 이해해보도록 하겠습니다.
+
+-------------------------
 
 Arrays.sort로 배열을 정렬하는 예제입니다.
 ```java
@@ -240,6 +244,8 @@ String.compareToIgnoreCase입니다. 이 함수가 Comparator의 `int compare(T 
   }
 ```
 
+----------------------
+
 두번째 예시를 보겠습니다. ArrayList.sort로 ArrayList<String>를 정렬하는 예제입니다.
 ```java
     ArrayList<String> arr = new ArrayList<>();
@@ -268,6 +274,7 @@ String.compareTo입니다. 이 함수가 Comparator의 `int compare(T var1, T va
   }
 ```
 
+---------------------
 
 마지막 예제를 보겠습니다. ArrayList.sort로 ArrayList<User>를 정렬하는 예제입니다.
 
